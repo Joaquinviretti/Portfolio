@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/bootstrap.png">
     <title>Joaquin Viretti</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,6 +15,8 @@
 </head>
 <body id="#home">
     
+<!-- NAVBAR -->
+
     <nav class="navbar navbar-expand-lg navbar-dark ">
         <div class="container-fluid mt-1 ">
           <a class="navbar-brand mx-3 name" href="#portada">Joaquín Viretti</a>
@@ -42,6 +45,7 @@
         </div>
       </nav>
 
+<!-- PORTADA -->
       <section class="d-flex align-items-center " id="portada">
         <div class="container container-portada text-white-50">
           <div class="row row-portada">
@@ -59,74 +63,80 @@
             </div>
             <div class="col-1 text-end d-flex align-items-center">
               <div class="d-flex flex-column text-center">
-               <a href="" class="link-secondary"><i class="fab fa-github fa-3x my-3"></i></a>
+               <a href="https://github.com/Joaquinviretti" target="_blank" class="link-secondary"><i class="fab fa-github fa-3x my-3"></i></a>
                 <a href="https://www.linkedin.com/in/joaquinviretti/" class="link-secondary" target="_blank"><i class="fab fa-linkedin-in fa-3x my-3 "></i></a>
               </div>
             </div>
           </div>
         </div>
-
         <div class="portada-mobile">
           <img src="img/profile-picture.jpg" class="w-50 rounded-circle" alt="">
           <h1 class="text-light mx-3 my-4 text-center ">Hola, soy Joaquín.</h1>
           <h5 class="my-4 text-white-50 text-center">Estudiante de Ingeniería en Informática y de la carrera de Programación Full Stack.</h5>
-          <a class="mt-4 btn btn-primary rounded-pill btn-light" href="#contacto" role="button">Contactame</a>
-          
+          <a class="mt-4 btn btn-primary rounded-pill btn-light" href="#contacto" role="button">Contactame</a> 
         </div>
-        
       </section>
-
+<!-- ACERCA DE MI -->
       <section id="acercaDeMi" class="py-5 text-center bg-secondary text-light">
         <h3 class="mb-4">Acerca de mi</h3>
         <div class="container">
           <div class="row row-acerca">
             <div class="col-4 offset-2 text-end">
-              Me caracteriza una gran tenacidad, la cual me hizo ir un paso más allá de mi carrera y comenzar a formarme como programador Full Stack en dos instituciones distintas. También soy un apasionado por el diseño y manejo la mayoría de los entornos de edición audiovisual.
+             <p> Me caracteriza una gran tenacidad, la cual me hizo ir un paso más allá de mi carrera y comenzar a formarme como programador Full Stack en dos instituciones distintas. También soy un apasionado por el diseño y manejo la mayoría de los entornos de edición audiovisual.</p>
             </div>
             <div class="col-4 text-start">
-              Busco poner en práctica todos los conocimientos que he ido adquiriendo y adentrarme en el mundo IT. Se que me queda mucho por aprender pero estoy seguro de que enfrentarme a nuevos desafíos será la mejor forma de crecer como programador. 
+              <p>Busco poner en práctica todos los conocimientos que he ido adquiriendo y adentrarme en el mundo IT. Se que me queda mucho por aprender pero estoy seguro de que enfrentarme a nuevos desafíos será la mejor forma de crecer como programador. </p>
             </div>
           </div>
           <div class="acerca-mobile text-center container">
             <p>Me caracteriza una gran tenacidad, la cual me hizo ir un paso más allá de mi carrera y comenzar a formarme como programador Full Stack en dos instituciones distintas. También soy un apasionado por el diseño y manejo la mayoría de los entornos de edición audiovisual.</p>
             <p>Busco poner en práctica todos los conocimientos que he ido adquiriendo y adentrarme en el mundo IT. Se que me queda mucho por aprender pero estoy seguro de que enfrentarme a nuevos desafíos será la mejor forma de crecer como programador.</p>
-
           </div>
         </div>
       </section>
-
-      <section id="formacion" class=" pt-5">
+<!-- FORMACIÓN -->
+      <section id="formacion" class="pt-5">
         <h3 class="text-center">Formación</h3>
         <div class="formacion-container d-flex text-center p-4">
-          <div class="w-50 pt-3">
+          <div class="w-50 px-2 pt-3">
             <h5>Ingeniería en Informática</h5>
             <h6>Universidad de Buenos Aires (2020-2026)</h6>
             <p>Actualmente cursando primer año.</p>
           </div>
-          <div class="pt-3 w-50 coder">
+          <div class="pt-3 px-2 w-50 coder">
             <h5>Carrera de Desarrollo Full Stack</h5>
             <h6>Coder House (2021-2022)</h6>
             <p>Diseño Web, Javascript, React, Backend.</p>
           </div>
-          <div class="pt-3 w-50">
+          <div class="pt-3 px-2 w-50">
             <h5>Programación Web Full Stack</h5>
             <h6>Egg Tech (2020-2021)</h6>
             <p>JAVA, MySQL, Desarrollo Web.</p>
           </div>
         </div>
       </section>
- 
+ <!-- PROYECTOS -->
     <section id="proyectos" class="py-5">
       <h3 class="text-center pb-4">Proyectos</h3>
       <div class="container proyectos-mobile d-flex justify-content-around">
         <div class="card" style="width: 18rem;">
           <img src="img/patagonia.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Página Web</h5>
+            <h5 class="card-title">Conocé la Patagonia</h5>
             <p class="card-text">Creada desde cero como proyecto final para el curso de diseño web de Coder House.</p>
             <a href="https://conocelapatagonia.netlify.app/" class="btn btn-secondary">Visitar</a>
           </div>
         </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/agroplantas.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Agroplantas</h5>
+            <p class="card-text">Web creada como muestrario de productos y sección de contacto para un emprendimiento.</p>
+            <a href="https://agro-plantas.netlify.app/" class="btn btn-secondary">Visitar</a>
+          </div>
+        </div>
+        
 
         <div class="card" style="width: 18rem;">
           <img src="img/portfolio.png" class="card-img-top" alt="...">
@@ -137,206 +147,117 @@
           </div>
         </div>
 
-        <div class="card" style="width: 18rem;">
-          <img src="img/bootstrap.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Bootstrap</h5>
-            <p class="card-text">Primer web aplicando bootstrap con lo aprendido en el Workshop de Programa desde tu Casa.</p>
-            <a href="" class="btn btn-secondary">Visitar</a>
-          </div>
-        </div>
       </div>
       </div>
     </section>
-
+<!-- SKILLS -->
       <section id="skills" class="py-5">
         <h3 class="text-center pb-4">Skills</h3>
         <div class="skills-container text-center container">
-
             <div class="skill-card">
               <div class="card-content">
                 <i class="fab fa-html5 fa-4x "></i>
                 <h5>HTML</h5>
               </div>
             </div>
-  
             <div class="skill-card">
               <div class="card-content">
                 <i class="fab fa-css3-alt fa-4x"></i>
                 <h5>CSS</h5>
               </div>
             </div>
-  
             <div class="skill-card">
               <div class="card-content">
                 <i class="fab fa-js fa-4x"></i>
                 <h5>Javascript</h5>
               </div>
             </div>
-  
             <div class="skill-card">
               <div class="card-content">
                 <i class="fab fa-bootstrap fa-4x"></i>
                 <h5>Bootstrap</h5>
               </div>
             </div>
-  
             <div class="skill-card">
               <div class="card-content">
                 <i class="fab fa-sass fa-4x"></i>
                 <h5>Sass</h5>
               </div>
             </div>
-  
-            <div class="skill-card">
-              <div class="card-content">
-                <i class="fab fa-react fa-4x"></i>
-                <h5>React</h5>
-              </div>
-            </div>
-  
-            <div class="skill-card">
-              <div class="card-content">
-                <i class="fab fa-node-js fa-4x"></i>
-                <h5>Node.js</h5>
-              </div>
-            </div>
-  
-            <div class="skill-card">
-              <div class="card-content">
-                <img src="img/typescript.png" class="typescript" alt="">
-                <h5>Typescript</h5>
-              </div>
-            </div>
-  
             <div class="skill-card">
               <div class="card-content">
                 <i class="fab fa-java fa-4x"></i>
                 <h5>JAVA</h5>
               </div>
             </div>
-  
+            <!--
+            <div class="skill-card">
+              <div class="card-content">
+                <i class="fab fa-react fa-4x"></i>
+                <h5>React</h5>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="card-content">
+                <i class="fab fa-node-js fa-4x"></i>
+                <h5>Node.js</h5>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="card-content">
+                <img src="img/typescript.png" class="typescript" alt="">
+                <h5>Typescript</h5>
+              </div>
+            </div>
             <div class="skill-card">
               <div class="card-content">
                 <i class="fab fa-python fa-4x"></i>
                 <h5>PYTHON</h5>
               </div>
             </div>
-  
             <div class="skill-card">
               <div class="card-content">
                 <img src="img/sql.png" class="sql" alt="">
                 <h5 class="sql-text">MySQL</h5>
               </div>
             </div>
-  
             <div class="skill-card">
               <div class="card-content">
                 <img src="img/spring.svg" class="spring" alt="">
                 <h5>Spring</h5>
               </div>
             </div>
-  
             <div class="skill-card">
               <div class="card-content">
                 <img src="img/thymeleaf.png" class="thymeleaf" alt="">
                 <h5>Thymeleaf</h5>
               </div>
             </div>
-  
             <div class="skill-card empty">
               <div class="card-content">
-  
               </div>
             </div>
-
             <div class="skill-card empty">
               <div class="card-content">
-  
               </div>
             </div>
-
             <div class="skill-card empty">
               <div class="card-content">
-  
               </div>
             </div>
-
             <div class="skill-card empty">
               <div class="card-content">
-  
               </div>
             </div>
-
             <div class="skill-card empty">
               <div class="card-content">
-  
               </div>
-            </div>
-            
+            </div> 
+          --> 
           </div>
-
-        
-
-          <!-- 
-          <div class="boxes">
-            <div class="box box1">
-              <i class="fab fa-html5 fa-5x "></i>
-              <h5 class="mt-4">HTML</h5>
-            </div>
-            <div class="box box2">
-              <i class="fab fa-css3-alt fa-5x"></i>
-              <h5 class="mt-4">CSS</h5>
-            </div>
-            <div class="box box3">
-              <i class="fab fa-js fa-5x"></i>
-              <h5 class="mt-4">Javascript</h5>
-            </div>
-            <div class="box box3">
-              <i class="fab fa-bootstrap fa-5x"></i>
-              <h5 class="mt-4">Bootstrap</h5>
-            </div>
-            <div class="box box3">
-              <i class="fab fa-sass fa-5x"></i>
-              <h5 class="mt-4">Sass</h5>
-            </div>
-            <div class="box box1">
-              <i class="fab fa-java fa-5x"></i>
-              <h5 class="mt-4">JAVA</h5>
-            </div>
-          </div>
-
-          <div class="boxes2 mt-3 ">
-            <div class="box box1">
-              <i class="fab fa-java fa-5x"></i>
-              <h5 class="mt-4">JAVA</h5>
-            </div>
-            <div class="box box1">
-              <i class="fab fa-java fa-5x"></i>
-              <h5 class="mt-4">JAVA</h5>
-            </div>
-            <div class="box box2">
-             
-            </div>
-            <div class="box box3">
-              <img src="img/sql.png" class="sql" alt="">
-              <h5 class="pb-1">MySQL</h5>
-            </div>
-            <div class="box box1">
-              <img src="img/spring.svg" class="spring" alt="">
-              <h5 class="mt-4">Spring</h5>
-            </div>
-            <div class="box box1">
-              <img src="img/thymeleaf.png" class="thymeleaf" alt="">
-              <h5 class="mt-4">Thymeleaf</h5>
-            </div>
-          </div>
-        </div> 
-        -->
         </div>
-
       </section>
-
+<!-- CONTACTO -->
       <section id="contacto" class="py-4">
         <h3 class="text-center pb-4">Contacto</h3>
         <div class="container">
@@ -369,28 +290,23 @@
             </div>
           </div>
         </div>
-
       </section>
-
+<!-- FOOTER -->
       <footer class="bg-secondary ">
         <div class="container-fluid py-2">
           <div class="row">
             <div class="col">
               <a href="https://www.linkedin.com/in/joaquinviretti/" target="_blank"><i class="fab fa-linkedin-in fa-lg text-light "></i></a> 
               <a href="https://www.facebook.com/ANDRESVIRETTI/"><i class="fab fa-facebook-square text-light fa-lg ms-3"></i></a>
-
             </div>
             <div class="col text-end text-light">
               2021 Joaquín Viretti
             </div>
           </div>
         </div>
-      
-
       </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
- 
 </body>
 </html>
 
