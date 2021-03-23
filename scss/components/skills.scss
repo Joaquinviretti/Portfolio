@@ -1,0 +1,137 @@
+@import "../base/variables.scss";
+@import "../base/mixin.scss";
+
+#skills     {
+    
+    .skills-container   {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .skill-card {
+            width: 10rem;
+            height: 150px;
+            border-radius: 0.2rem;
+            border: 1px solid rgb(209, 209, 209);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+
+            &:hover     {
+                background-color: rgb(240, 240, 240);   
+            }
+            
+            .btn-skill  {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                background-color: rgba(255, 255, 255, 0)!important;
+                
+                border: none;
+
+                &:active   {
+                    border: none;
+                    box-shadow: none!important;
+                }
+                
+               &:visited  {
+                    outline: none;
+                }
+                &:focus   {
+                    box-shadow: none;
+                }
+    
+                .card-content   {
+                    width: 90%;
+                    height: 130px;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0;
+                    color: black;
+    
+                    .fa-html5   { color: $html-color;}
+                    
+                    .fa-css3-alt { color: $css-color;}
+                    
+                    .fa-js { color: $js-color;}
+                    
+                    .fa-bootstrap { color: $bt-color;}
+                    
+                    .fa-sass { color: $sass-color; }               
+
+                    .fa-java { color: $java-color; }
+
+                    .empty  { visibility: hidden; }
+
+                }
+
+            }
+            
+        }
+
+        .modal  {
+            .pb-html    {
+                @include progress-bar($html-color,100%);
+                @include llenado($html-progreso);
+                animation: html 1.5s;
+                @keyframes html {
+                    from {width: 0;};
+                    to {width: $html-progreso;};
+                }
+            }
+            .pb-css     {
+                @include progress-bar($css-color,90%);
+                @include llenado($css-progreso);
+                animation: css 1.5s;
+                @keyframes css {
+                    from {width: 0;};
+                    to {width: $css-progreso;};
+                }
+            }
+            .pb-js     {
+                @include progress-bar($js-color,30%);
+                @include llenado($js-progreso);
+                animation: js 1.5s;
+                @keyframes js {
+                    from {width: 0;};
+                    to {width: $js-progreso;};
+                }
+                
+            }
+            .pb-bt     {
+                @include progress-bar($bt-color,90%);
+                @include llenado($bt-progreso);
+                animation: bt 1.5s;
+                @keyframes bt {
+                    from {width: 0;};
+                    to {width: $bt-progreso;};
+                }
+
+            }
+            .pb-sass     {
+                @include progress-bar($sass-color,80%);
+                @include llenado($sass-progreso);
+                animation: sass 1.5s;
+                @keyframes sass {
+                    from {width: 0;};
+                    to {width: $sass-progreso;};
+                }
+            }
+            .pb-java     {
+                @include progress-bar($java-color,40%);
+                @include llenado($css-progreso);
+                animation: java 1.5s;
+                @keyframes java {
+                    from {width: 0;};
+                    to {width: $java-progreso;};
+                }
+            }
+        }
+
+    }
+
+    
+}

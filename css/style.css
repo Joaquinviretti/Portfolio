@@ -1,270 +1,352 @@
-*   {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+.navbar {
+  background-color: #2e2e2e;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.navbar .name {
+  font-family: "Roboto", sans-serif;
 }
 
-.portada-mobile, .acerca-mobile {
-    display: none!important;
+#portada {
+  height: 100vh;
+  padding-bottom: 5%;
+  font-family: "Roboto", sans-serif;
+  background-image: url(../img/fondo1.jpg);
+  background-attachment: fixed;
+}
+#portada h1 {
+  font-size: 3rem;
+}
+#portada h5 {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+#portada .portada-mobile {
+  display: none !important;
+}
+#portada .left-portada {
+  animation: entrada 1.3s;
+}
+@keyframes entrada {
+  0% {
+    transform: translate(-300px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+#portada img {
+  animation: entrada-up 1.3s;
+}
+@keyframes entrada-up {
+  0% {
+    opacity: 0;
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+#portada .logos {
+  animation: entrada-right 1s;
+}
+@keyframes entrada-right {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
-#portada    {
-    height: 100vh;
-    padding-bottom: 5%;
-    font-family: 'Roboto', sans-serif;
-    background-image: url(../img/fondo1.jpg);
-    background-attachment: fixed;
+#formacion .coder {
+  border-left: 2px solid #b6b6b6;
+  border-right: 2px solid #b6b6b6;
 }
 
-.navbar     {
-    background-color: rgb(46, 46, 46);
+#acercaDeMi .acerca-mobile {
+  display: none !important;
 }
 
-.name   {
-    font-family: 'Roboto', sans-serif;
+#skills .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.fa-html5   {
-    color: rgb(255, 115, 0);
+#skills .skills-container .skill-card {
+  width: 10rem;
+  height: 150px;
+  border-radius: 0.2rem;
+  border: 1px solid #d1d1d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
-
-.fa-css3-alt    {
-    color: rgb(0, 0, 197);
+#skills .skills-container .skill-card:hover {
+  background-color: #f0f0f0;
 }
-
-.fa-js  {
-    color: rgb(255, 230, 0);
+#skills .skills-container .skill-card .btn-skill {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border: none;
 }
-
-.fa-bootstrap   {
-    color: #7952B3;
+#skills .skills-container .skill-card .btn-skill:active {
+  border: none;
+  box-shadow: none !important;
 }
-
-.fa-sass    {
-    color: #C16595;
+#skills .skills-container .skill-card .btn-skill:visited {
+  outline: none;
 }
-
-#portada h1     {
-    font-size: 3rem;
+#skills .skills-container .skill-card .btn-skill:focus {
+  box-shadow: none;
 }
-
-#portada h5     {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+#skills .skills-container .skill-card .btn-skill .card-content {
+  width: 90%;
+  height: 130px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  color: black;
 }
-
-.linked     {
-    width: 3.2rem;
-    height: auto;
+#skills .skills-container .skill-card .btn-skill .card-content .fa-html5 {
+  color: #ff7300;
 }
-
-#proyectos  {
-    background-color: rgb(247, 247, 247);
+#skills .skills-container .skill-card .btn-skill .card-content .fa-css3-alt {
+  color: #0000c5;
 }
-
-#skills     {
-    background-color: rgb(247, 247, 247);
+#skills .skills-container .skill-card .btn-skill .card-content .fa-js {
+  color: #ffe600;
 }
-
-.skill-card:hover   {
-    background-color: rgb(240, 240, 240);
+#skills .skills-container .skill-card .btn-skill .card-content .fa-bootstrap {
+  color: #7952B3;
 }
-
-.box    {
-    width: 31%;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 2px rgb(158, 158, 158);
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#skills .skills-container .skill-card .btn-skill .card-content .fa-sass {
+  color: #C16595;
 }
-
-#skills h5   {
-    margin: 0;
-    font-weight: bold;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+#skills .skills-container .skill-card .btn-skill .card-content .fa-java {
+  color: #414141;
 }
-
-#formacion  {
-    background-color: rgb(247, 247, 247);
+#skills .skills-container .skill-card .btn-skill .card-content .empty {
+  visibility: hidden;
 }
-
-#contacto   {
-    background-color:  rgb(247, 247, 247);
+#skills .skills-container .modal .pb-html {
+  background-color: #ff7300;
+  width: 100%;
+  animation: filol 1.5s;
+  animation: filol 1.5s;
+  animation: html 1.5s;
 }
-
-#formacion a    {
-    text-decoration: none;
-}
-
-.coder  {
-    border-left: 2px solid rgb(182, 182, 182);
-    border-right:2px solid rgb(182, 182, 182);
-}
-
-.mapa   {
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
     width: 100%;
-    height: 62%;
+  }
 }
-
-/* SKILLS */
-
-.skill-card {
-    width: 10rem;
-    height: 150px;
-    border-radius: 0.2rem;
-    border: 1px solid rgb(209, 209, 209);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
-
-.card-content   {
+#skills .skills-container .modal .pb-css {
+  background-color: #0000c5;
+  width: 90%;
+  animation: filol 1.5s;
+  animation: filol 1.5s;
+  animation: css 1.5s;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes css {
+  from {
+    width: 0;
+  }
+  to {
     width: 90%;
-    height: 130px;
-    display: flex;
-    justify-content: space-around;
+  }
+}
+#skills .skills-container .modal .pb-js {
+  background-color: #ffe600;
+  width: 30%;
+  animation: filol 1.5s;
+  animation: filol 1.5s;
+  animation: js 1.5s;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes js {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+#skills .skills-container .modal .pb-bt {
+  background-color: #7952B3;
+  width: 90%;
+  animation: filol 1.5s;
+  animation: filol 1.5s;
+  animation: bt 1.5s;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes bt {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+#skills .skills-container .modal .pb-sass {
+  background-color: #C16595;
+  width: 80%;
+  animation: filol 1.5s;
+  animation: filol 1.5s;
+  animation: sass 1.5s;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes sass {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+#skills .skills-container .modal .pb-java {
+  background-color: #414141;
+  width: 40%;
+  animation: filol 1.5s;
+  animation: filol 1.5s;
+  animation: java 1.5s;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes java {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+.mapa {
+  width: 100%;
+  height: 62%;
+}
+
+@media (max-width: 600px) {
+  #portada .portada-mobile {
+    display: flex !important;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.skills-container   {
+  #acercaDeMi .acerca-mobile {
+    display: flex !important;
+    height: 70vh;
+  }
+
+  .acerca-mobile p {
+    font-size: 1rem;
+    line-height: 2.4rem;
+  }
+
+  .container-portada {
+    display: none !important;
+  }
+
+  .portada-mobile h1 {
+    font-size: 2rem !important;
+  }
+
+  .row-acerca {
+    display: none;
+  }
+
+  .acerca-mobile {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: left;
+  }
 
-.empty  {
-    visibility: hidden;
-}
+  .formacion-container {
+    flex-direction: column;
+  }
 
-.fa-python  {
-    position: relative;
-    top: 10px;
-}
-
-.sql    {
-    width: 80px;  
-}
-
-.spring {
-    width: 60px;
-    position: relative;
-    bottom: -5px;
-}
-
-.thymeleaf  {
-    width: 60px;
-    position: relative;
-    bottom: -4px;
-}
-
-.typescript     {
-    width: 60px;
-    position: relative;
-    bottom: -5px;
-   
-}
-
-.sql-text   {
-    position: relative;
-    bottom: px;
-}
-
-/* SKILLS */
-
-.btn-skill  {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0)!important;
+  .formacion-container div {
+    width: 100% !important;
     border: none;
-}
+    margin-bottom: 5%;
+  }
 
-.btn-skill:active   {
+  #formacion .coder {
     border: none;
-    box-shadow: none!important;
+  }
+
+  #formacion h3 {
+    margin-bottom: 5%;
+  }
+
+  .proyectos-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .proyectos-mobile .card {
+    margin-bottom: 8%;
+  }
+
+  #contacto .row {
+    flex-direction: column;
+  }
 }
 
-.btn-skill:visited  {
-    outline: none;
-}
-
-.btn-primary:focus   {
-    box-shadow: none;
-}
-
-.card-content   {
-    margin: 0!important;
-    color: black;
-}
-
-@media (max-width: 600px)  {
-
-    .portada-mobile     {
-        display: flex!important;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .acerca-mobile   {
-        display: flex!important;
-        height: 70vh;
-    }
-
-    .acerca-mobile p    {
-        font-size: 1rem;
-        line-height: 2.4rem;
-    }
-
-    .container-portada    {
-       display: none!important; 
-    }
-
-    .portada-mobile h1     {
-        font-size: 2rem!important;
-    }
-
-    .row-acerca     {
-        display: none;
-    }
-
-    .acerca-mobile  {
-        display: flex;
-        flex-direction: column;
-        font-size: 1rem;
-        text-align: left;
-    }
-
-    .formacion-container    {
-        flex-direction: column;
-        
-    }
-
-    .formacion-container div    {
-        width: 100%!important;
-        border: none;
-        margin-bottom: 5%;
-    }
-
-    #formacion h3     {
-        margin-bottom: 5%;
-    }
-
-    .proyectos-mobile   {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .proyectos-mobile .card     {
-        margin-bottom: 8%;
-    }
-
-    #contacto .row{
-        flex-direction: column;
-    }
-
-}
+/*# sourceMappingURL=style.css.map */

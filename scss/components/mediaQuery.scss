@@ -1,0 +1,75 @@
+@media (max-width: 600px)  {
+
+   #portada     {
+    .portada-mobile     {
+        display: flex!important;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; 
+    }
+   }
+
+   #acercaDeMi  {
+    .acerca-mobile   {
+        display: flex!important;
+        height: 70vh;
+    }
+   }
+
+    .acerca-mobile p    {
+        font-size: 1rem;
+        line-height: 2.4rem;
+    }
+
+    .container-portada    {
+       display: none!important; 
+    }
+
+    .portada-mobile h1     {
+        font-size: 2rem!important;
+    }
+
+    .row-acerca     {
+        display: none;
+    }
+
+    .acerca-mobile  {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .formacion-container    {
+        flex-direction: column;
+        
+    }
+
+    .formacion-container div    {
+        width: 100%!important;
+        border: none;
+        margin-bottom: 5%;
+    }
+
+    #formacion .coder   {
+        border: none;
+    }
+
+    #formacion h3     {
+        margin-bottom: 5%;
+    }
+
+    .proyectos-mobile   {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyectos-mobile .card     {
+        margin-bottom: 8%;
+    }
+
+    #contacto .row{
+        flex-direction: column;
+    }
+
+}

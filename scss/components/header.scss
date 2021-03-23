@@ -1,0 +1,60 @@
+ .navbar {
+        background-color: rgb(46, 46, 46);
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        .name   {
+            font-family: 'Roboto', sans-serif;
+        }
+       
+    }
+
+    #portada    {
+
+        height: 100vh;
+        padding-bottom: 5%;
+        font-family: 'Roboto', sans-serif;
+        background-image: url(../img/fondo1.jpg);
+        background-attachment: fixed;
+
+        h1  {
+            font-size: 3rem;
+        }
+        h5     {
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+        }
+
+        .portada-mobile {
+            display: none!important;
+        }
+
+        .left-portada   {
+           animation: entrada 1.3s;
+           
+           @keyframes entrada {
+               0% {transform: translate(-300px);}
+               100% {transform: translate(0);}
+           }
+           
+        }
+
+        img     {
+            animation: entrada-up 1.3s;
+
+            @keyframes entrada-up {
+                0% {opacity: 0; transform:rotate(60deg);}
+                100% {transform: translate(0); opacity: 1;}
+            }
+        }
+    
+        .logos  {
+            animation: entrada-right 1s;
+            @keyframes entrada-right {
+                0% {transform: translateX(200px);}
+                100% {transform: translate(0);}
+            }
+        }
+
+
+    }

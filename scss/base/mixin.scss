@@ -1,0 +1,17 @@
+@mixin llenado($widt)  {
+
+    animation: filol 1.5s;
+    
+    @keyframes html {
+        from {width: 0;};
+        to {width: 100%;};
+    }
+}
+
+@mixin progress-bar($bg-color, $width)  {
+    background-color: $bg-color;
+    width: $width;
+    animation: filol 1.5s;
+}
+
+
