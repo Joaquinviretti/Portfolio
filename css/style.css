@@ -76,6 +76,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px;
 }
 #skills .skills-container .skill-card {
   width: 10rem;
@@ -282,6 +283,11 @@
   height: 62%;
 }
 
+address .telefono {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
 @media (max-width: 600px) {
   #portada .portada-mobile {
     display: flex !important;
@@ -349,6 +355,9 @@
   #contacto .row {
     flex-direction: column;
   }
+}
+body {
+  background-color: #fafafa;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,6 +7,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 20px;
 
         .skill-card {
             width: 10rem;
@@ -19,7 +20,7 @@
             background-color: white;
 
             &:hover     {
-                background-color: rgb(240, 240, 240);   
+                background-color: rgb(240, 240, 240);         
             }
             
             .btn-skill  {
