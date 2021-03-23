@@ -1,6 +1,6 @@
 .navbar {
-  background-color: #2e2e2e;
-  position: sticky;
+  background-color: rgba(45, 2, 85, 0);
+  background-color: gra;
   top: 0;
   z-index: 3;
 }
@@ -9,11 +9,13 @@
 }
 
 #portada {
-  height: 100vh;
+  height: 110vh;
   padding-bottom: 5%;
   font-family: "Roboto", sans-serif;
   background-image: url(../img/fondo1.jpg);
   background-attachment: fixed;
+  padding-top: 80px;
+  margin-top: -80px;
 }
 #portada h1 {
   font-size: 3rem;

@@ -1,8 +1,9 @@
  .navbar {
-        background-color: rgb(46, 46, 46);
-        position: sticky;
+        background-color: rgba(45, 2, 85, 0);
+        background-color: gra;
         top: 0;
         z-index: 3;
+ 
         .name   {
             font-family: 'Roboto', sans-serif;
         }
@@ -11,11 +12,15 @@
 
     #portada    {
 
-        height: 100vh;
+        height: 110vh;
         padding-bottom: 5%;
         font-family: 'Roboto', sans-serif;
         background-image: url(../img/fondo1.jpg);
         background-attachment: fixed;
+        padding-top: 80px;
+        margin-top: -80px;
+
+
 
         h1  {
             font-size: 3rem;
