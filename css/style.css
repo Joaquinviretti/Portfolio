@@ -72,6 +72,12 @@
   display: none !important;
 }
 
+#skills1 .skills_box {
+  background-color: white;
+  width: 100%;
+  height: 500px;
+}
+
 #skills .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -79,7 +85,7 @@
   padding: 20px;
 }
 #skills .skills-container .skill-card {
-  width: 10rem;
+  width: 30%;
   height: 150px;
   border-radius: 0.2rem;
   border: 1px solid #d1d1d1;
@@ -87,6 +93,7 @@
   justify-content: center;
   align-items: center;
   background-color: white;
+  margin-top: 1px;
 }
 #skills .skills-container .skill-card:hover {
   background-color: #f0f0f0;
@@ -135,6 +142,15 @@
 }
 #skills .skills-container .skill-card .btn-skill .card-content .fa-java {
   color: #414141;
+}
+#skills .skills-container .skill-card .btn-skill .card-content .fa-android {
+  color: #30D780;
+}
+#skills .skills-container .skill-card .btn-skill .card-content .fa-kaggle {
+  color: #E0753D;
+}
+#skills .skills-container .skill-card .btn-skill .card-content .fa-database {
+  color: #005E86;
 }
 #skills .skills-container .skill-card .btn-skill .card-content .empty {
   visibility: hidden;
@@ -275,6 +291,75 @@
   }
   to {
     width: 40%;
+  }
+}
+#skills .skills-container .modal .pb-android {
+  background-color: #30D780;
+  width: 20%;
+  animation: filol 1.5s;
+  animation: filol 1.5s;
+  animation: android 1.5s;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes android {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+#skills .skills-container .modal .pb-kotlin {
+  background-color: #E0753D;
+  width: 30%;
+  animation: filol 1.5s;
+  animation: filol 1.5s;
+  animation: kotlin 1.5s;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes kotlin {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+#skills .skills-container .modal .pb-mysql {
+  background-color: #005E86;
+  width: 30%;
+  animation: filol 1.5s;
+  animation: filol 1.5s;
+  animation: mysql 1.5s;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes mysql {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
   }
 }
 

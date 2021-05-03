@@ -1,6 +1,14 @@
 @import "../base/variables.scss";
 @import "../base/mixin.scss";
 
+#skills1 {
+    .skills_box {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 500px;
+    }
+}
+
 #skills     {
     
     .skills-container   {
@@ -10,7 +18,7 @@
         padding: 20px;
 
         .skill-card {
-            width: 10rem;
+            width: 30%;
             height: 150px;
             border-radius: 0.2rem;
             border: 1px solid rgb(209, 209, 209);
@@ -18,6 +26,7 @@
             justify-content: center;
             align-items: center;
             background-color: white;
+            margin-top: 1px;
 
             &:hover     {
                 background-color: rgb(240, 240, 240);         
@@ -65,7 +74,15 @@
 
                     .fa-java { color: $java-color; }
 
+                    .fa-android {color:$android-color;}
+
+                    .fa-kaggle {color: $kotlin-color;}
+
+                    .fa-database {color: $mysql-color;}
+
                     .empty  { visibility: hidden; }
+
+
 
                 }
 
@@ -123,11 +140,40 @@
             }
             .pb-java     {
                 @include progress-bar($java-color,40%);
-                @include llenado($css-progreso);
+                @include llenado($java-progreso);
                 animation: java 1.5s;
                 @keyframes java {
                     from {width: 0;};
                     to {width: $java-progreso;};
+                }
+            }
+            .pb-android    {
+                @include progress-bar($android-color,20%);
+                @include llenado($css-progreso);
+                animation: android 1.5s;
+                @keyframes android {
+                    from {width: 0;};
+                    to {width: $android-progreso;};
+                }
+            }
+
+            .pb-kotlin   {
+                @include progress-bar($kotlin-color,30%);
+                @include llenado($kotlin-progreso);
+                animation: kotlin 1.5s;
+                @keyframes kotlin {
+                    from {width: 0;};
+                    to {width: $kotlin-progreso;};
+                }
+            }
+
+            .pb-mysql   {
+                @include progress-bar($mysql-color,30%);
+                @include llenado($mysql-progreso);
+                animation: mysql 1.5s;
+                @keyframes mysql {
+                    from {width: 0;};
+                    to {width: $mysql-progreso;};
                 }
             }
         }
