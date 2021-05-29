@@ -363,6 +363,14 @@
   }
 }
 
+#proyectos .container {
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+#proyectos .container .card {
+  margin-bottom: 2em;
+}
+
 .mapa {
   width: 100%;
   height: 62%;
