@@ -82,7 +82,7 @@
 
                     .empty  { visibility: hidden; }
 
-
+                    .fa-python {color: $py-color}
 
                 }
 
@@ -110,7 +110,7 @@
                 }
             }
             .pb-js     {
-                @include progress-bar($js-color,30%);
+                @include progress-bar($js-color,70%);
                 @include llenado($js-progreso);
                 animation: js 1.5s;
                 @keyframes js {
@@ -139,7 +139,7 @@
                 }
             }
             .pb-java     {
-                @include progress-bar($java-color,40%);
+                @include progress-bar($java-color,70%);
                 @include llenado($java-progreso);
                 animation: java 1.5s;
                 @keyframes java {
@@ -148,7 +148,7 @@
                 }
             }
             .pb-android    {
-                @include progress-bar($android-color,20%);
+                @include progress-bar($android-color,50%);
                 @include llenado($css-progreso);
                 animation: android 1.5s;
                 @keyframes android {
@@ -168,12 +168,22 @@
             }
 
             .pb-mysql   {
-                @include progress-bar($mysql-color,30%);
+                @include progress-bar($mysql-color,60%);
                 @include llenado($mysql-progreso);
                 animation: mysql 1.5s;
                 @keyframes mysql {
                     from {width: 0;};
                     to {width: $mysql-progreso;};
+                }
+            }
+
+            .pb-python   {
+                @include progress-bar($py-color,60%);
+                @include llenado($py-progreso);
+                animation: py 1.5s;
+                @keyframes py {
+                    from {width: 0;};
+                    to {width: $py-progreso;};
                 }
             }
         }

@@ -155,6 +155,9 @@
 #skills .skills-container .skill-card .btn-skill .card-content .empty {
   visibility: hidden;
 }
+#skills .skills-container .skill-card .btn-skill .card-content .fa-python {
+  color: #306998;
+}
 #skills .skills-container .modal .pb-html {
   background-color: #ff7300;
   width: 100%;
@@ -203,7 +206,7 @@
 }
 #skills .skills-container .modal .pb-js {
   background-color: #ffe600;
-  width: 30%;
+  width: 70%;
   animation: filol 1.5s;
   animation: filol 1.5s;
   animation: js 1.5s;
@@ -221,7 +224,7 @@
     width: 0;
   }
   to {
-    width: 30%;
+    width: 70%;
   }
 }
 #skills .skills-container .modal .pb-bt {
@@ -272,7 +275,7 @@
 }
 #skills .skills-container .modal .pb-java {
   background-color: #414141;
-  width: 40%;
+  width: 70%;
   animation: filol 1.5s;
   animation: filol 1.5s;
   animation: java 1.5s;
@@ -290,12 +293,12 @@
     width: 0;
   }
   to {
-    width: 40%;
+    width: 70%;
   }
 }
 #skills .skills-container .modal .pb-android {
   background-color: #30D780;
-  width: 20%;
+  width: 50%;
   animation: filol 1.5s;
   animation: filol 1.5s;
   animation: android 1.5s;
@@ -313,7 +316,7 @@
     width: 0;
   }
   to {
-    width: 20%;
+    width: 50%;
   }
 }
 #skills .skills-container .modal .pb-kotlin {
@@ -341,7 +344,7 @@
 }
 #skills .skills-container .modal .pb-mysql {
   background-color: #005E86;
-  width: 30%;
+  width: 60%;
   animation: filol 1.5s;
   animation: filol 1.5s;
   animation: mysql 1.5s;
@@ -359,7 +362,30 @@
     width: 0;
   }
   to {
-    width: 30%;
+    width: 60%;
+  }
+}
+#skills .skills-container .modal .pb-python {
+  background-color: #306998;
+  width: 60%;
+  animation: filol 1.5s;
+  animation: filol 1.5s;
+  animation: py 1.5s;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes py {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
   }
 }
 
